@@ -7,8 +7,11 @@ import DestinationScreen from './screens/destination';
 import HotelScreen from './screens/hotel';
 import ContactScreen from './screens/contact';
 import PagesNotFoundScreen from './screens/pages-not-found';
+import AdminDestination from './screens/admin-destination';
+import AdminHotel from './screens/admin-hotel';
 
-import "./css/flaticon.css"
+import "./css/flaticon.css";
+import "./css/style.css";
 
 const App = () => {
   return (
@@ -19,7 +22,8 @@ const App = () => {
         <Route path="destination" element={<DestinationScreen></DestinationScreen>}></Route>
         <Route path="hotel" element={<HotelScreen></HotelScreen>}></Route>
         <Route path="contact" element={<ContactScreen></ContactScreen>}></Route>
-
+        <Route path="admin/destination" element={<AdminDestination></AdminDestination>}></Route>
+        <Route path="admin/hotel" element={<AdminHotel></AdminHotel>}></Route>
 
         <Route path="*" element={<PagesNotFoundScreen></PagesNotFoundScreen>}></Route>
 
